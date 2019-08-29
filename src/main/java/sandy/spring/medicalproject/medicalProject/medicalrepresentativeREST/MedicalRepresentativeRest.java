@@ -24,6 +24,11 @@ public class MedicalRepresentativeRest {
 		return "DEMO_RESPONSE";
 	}
 	
+	@GetMapping("/seconddemo")
+	public String get2Demo() {
+		return "sssssDEMO_RESPONSE";
+	}
+	
 	@GetMapping("/GetAllMR")
 	public List<MedicalRepresentative> getAllMR() {
 		return medicalRepresentativeDao.getMR();
