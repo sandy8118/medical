@@ -19,6 +19,16 @@ public class MedicalRepresentativeRest {
 	@Autowired
 	private MedicalRepresentativeDao medicalRepresentativeDao;
 	
+	@GetMapping("/demo")
+	public String getDemo() {
+		return "DEMO_RESPONSE";
+	}
+	
+	@GetMapping("/seconddemo")
+	public String get2Demo() {
+		return "sssssDEMO_RESPONSE";
+	}
+	
 	@GetMapping("/GetAllMR")
 	public List<MedicalRepresentative> getAllMR() {
 		return medicalRepresentativeDao.getMR();
